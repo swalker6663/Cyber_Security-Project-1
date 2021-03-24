@@ -51,7 +51,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 The IP that i have whitelisted is my personal public IP.
 
 Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
 
@@ -59,7 +59,7 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Jump Box | Yes/No              | Personal IP    |
 | ELK      |   No                |                      |
-|          |   No                |                      |
+|   Web-1       |   No                |                      |
 
 ### Elk Configuration
 
