@@ -37,6 +37,7 @@ The configuration details of each machine may be found below.
 
 
 
+
 Linux![image](https://user-images.githubusercontent.com/75349397/112548536-03908580-8d82-11eb-919d-d092e2d81bb0.png)
 
 
