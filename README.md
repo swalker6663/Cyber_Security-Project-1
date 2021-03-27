@@ -44,13 +44,13 @@ Forwarding and centralizing log data. Installed as an agent on your servers, Fil
 The configuration details of each machine may be found below.
 
 
-| Name       |    Function  |  IP Address  |  Operating System  |
-|----------- | :-----------:| ------------ | -----------------: |
-| Jump-Box   | Gateway      | 10.0.0.8     | Linux
-| Web-1      | Web Server   | 10.0.0.9     | Linux
-| Web-2      | Web Server   | 10.0.0.10    | Linux
-| Web-3      | Web Server   | 10.0.0.12    | Linux
-| Blue-ELK-1 | Log Analyzer | 10.1.0.4     | Linux
+|  Name       |    Function  |  IP Address  |  Operating System  |
+| :---------- | :-----------:| :----------: | :----------------: |
+|  Jump-Box   | Gateway      | 10.0.0.8     | Linux
+|  Web-1      | Web Server   | 10.0.0.9     | Linux
+|  Web-2      | Web Server   | 10.0.0.10    | Linux
+|  Web-3      | Web Server   | 10.0.0.12    | Linux
+|  Blue-ELK-1 | Log Analyzer | 10.1.0.4     | Linux
 
 ## Access Policies
 
@@ -68,7 +68,7 @@ Jump Box/Ansible Container
 A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible  | Allowed IP Addresses |
-| ---------- | :------------------: | -------------------: | 
+| :--------- | :------------------: | :------------------: | 
 | Jump Box   |  Yes                 |     Personal IP      | 
 | ELK        |  Yes                 |    10.0.0.0/16       |
 | ELK        | Kibana-:5601-Yes     |    52.188.172.71     |
