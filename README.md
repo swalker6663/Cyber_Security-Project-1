@@ -12,17 +12,17 @@ As the above YAML file show the details require more than just the aid of a play
 
 -This document contains the following details: Description of the Topology
 
--Access Policies
+- Access Policies
 
--ELK Configuration
+- ELK Configuration
 
--Beats in Use
+ - Beats in Use
 
--Machines Being Monitored
+ - Machines Being Monitored
 
--How to Use the Ansible Build
+- How to Use the Ansible Build
 
--Description of the Topology
+##Description of the Topology
 
 
 -The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -64,17 +64,17 @@ Machines within the network can only be accessed by the Jump Box.
 
 -Which machine did you allow to access your ELK VM? 
 Jump Box/Ansible Container
-
--What was its IP address?
-127.0.0.2
+- PrivateIP: 10.0.0.8
+- PublicIP: 40.71.27.37
 
 A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible  | Allowed IP Addresses |
 | ---------- | :------------------: | -------------------: | 
 | Jump Box   |  Yes                 |     Personal IP      | 
-| ELK        |  Yes                 |    Its Public IP     |
-| Web-1      |  No                  |    52.188.172.71     |
+| ELK        |  Yes                 |    10.0.0.0/16       |
+| ELK        | Kibana-:5601-Yes     |    52.188.172.71     |
+| Blood_Load | HTTP-80-Yes          |    52.188.172.71     |
 | Web-2      |  No                  |    52.188.172.71     |
 | Web-3      |  No                  |    52.188.172.71     |
 
