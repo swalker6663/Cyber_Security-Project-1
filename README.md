@@ -8,21 +8,26 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-Enter the playbook file.
-This document contains the following details: -(24) Description of the Topology
+As the above YAML file show the details require more than just the aid of a playbook it also requires directions given withing the hosts file to direct certain tasks to each VM in this case but in a real environment will do the same thing.
 
-Access Policies
-ELK Configuration
-Beats in Use
-Machines Being Monitored
-How to Use the Ansible Build
-Description of the Topology
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+-This document contains the following details: Description of the Topology
+
+-Access Policies
+-ELK Configuration
+-Beats in Use
+-Machines Being Monitored
+-How to Use the Ansible Build
+-Description of the Topology
+-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
 
-What aspect of security do load balancers protect? Availability
-What is the advantage of a jump box?
+-What aspect of security do load balancers protect?
+Load balancers protect the Availability leg of the triad ensuring that the weight of the traffic is not overloaded causing servers to be overwhelmed all at once.
+
+-What is the advantage of a jump box?
+A jump server or Jump box is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Jumpbox and system network.
 
 What does Filebeat watch for? Forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
@@ -40,7 +45,7 @@ The configuration details of each machine may be found below.
 | Web-3      | Web Server   | 10.0.0.12    | Linux
 | Blue-ELK-1 | Log Analyzer | 10.1.0.4     | Linux
 
-Access Policies
+##Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 
