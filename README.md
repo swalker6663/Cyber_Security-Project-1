@@ -12,12 +12,19 @@ As the above YAML file show the details require more than just the aid of a play
 
 -This document contains the following details: Description of the Topology
 
-#Access Policies
+-Access Policies
+
 -ELK Configuration
+
 -Beats in Use
+
 -Machines Being Monitored
+
 -How to Use the Ansible Build
+
 -Description of the Topology
+
+
 -The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
@@ -30,8 +37,10 @@ A jump server or Jump box is a hardened and monitored device that spans two diss
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Jumpbox and system network.
 
-What does Filebeat watch for? Forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
-What does Metricbeat record? periodically collect metrics from the operating system and from services running on the server
+-What does Filebeat watch for? 
+Forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+
+-What does Metricbeat record? periodically collect metrics from the operating system and from services running on the server
 The configuration details of each machine may be found below.
 
 
@@ -51,27 +60,42 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: The IP that i have whitelisted is my personal public IP.
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by the Jump Box.
 
-Which machine did you allow to access your ELK VM? What was its IP address?_
+-Which machine did you allow to access your ELK VM? 
+Jump Box/Ansible Container
+
+-What was its IP address?
+127.0.0.2
+
 A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible  | Allowed IP Addresses |
 | ---------- | :------------------: | -------------------: | 
-| Jump Box   |  Yes/No              |     Personal IP      | 
-| ELK        |  No                  |                      |
-| Web-1      |  No                  |                      |
+| Jump Box   |  Yes                 |     Personal IP      | 
+| ELK        |  Yes                 |    Its Public IP     |
+| Web-1      |  No                  |    52.188.172.71     |
+| Web-2      |  No                  |    52.188.172.71     |
+| Web-3      |  No                  |    52.188.172.71     |
 
 ## Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is useful because it provides a way to complete multiple tasks and changes to any number of machines using 1 command(within a playbook) this makes setting up a larger network extremely easy reducing the amount of time taken per machine.
 
-What is the main advantage of automating configuration with Ansible? This allows multiple changes to multiple machines at once making
+
+-What is the main advantage of automating configuration with Ansible? 
+This allows multiple changes to multiple machines at once making
+
 The playbook implements the following tasks:
 
-TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-...
-...
+In the ELK install i used a playbook or YAML file with multiple commands that did the following.
+- Installed docker.io which is the software used to house the container
+- Installed python3-pip a package management system written in python used it install and manage software packages.
+- Increase the virtual memory providing a high level of resource to the systemm helping to carry our multiple process simultaneously. 
+- Download and launch the ELK container
+- Give permissions for the ports that ELK requires to run
+- Enable the service docker on boot
+
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
 TODO: Update the path with the name of your screenshot of docker ps output
