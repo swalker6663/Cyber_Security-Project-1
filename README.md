@@ -22,7 +22,7 @@ As the above YAML file show the details require more than just the aid of a play
 
 - How to Use the Ansible Build
 
-##Description of the Topology
+## Description of the Topology
 
 
 -The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -44,8 +44,6 @@ Forwarding and centralizing log data. Installed as an agent on your servers, Fil
 The configuration details of each machine may be found below.
 
 
-
-
 | Name       |    Function  |  IP Address  |  Operating System  |
 |----------- | :-----------:| ------------ | -----------------: |
 | Jump-Box   | Gateway      | 10.0.0.8     | Linux
@@ -54,7 +52,7 @@ The configuration details of each machine may be found below.
 | Web-3      | Web Server   | 10.0.0.12    | Linux
 | Blue-ELK-1 | Log Analyzer | 10.1.0.4     | Linux
 
-##Access Policies
+## Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 
@@ -88,7 +86,7 @@ This allows multiple changes to multiple machines at once making
 
 The playbook implements the following tasks:
 
-In the ELK install i used a playbook or YAML file with multiple commands that did the following.
+-In the ELK install i used a playbook or YAML file with multiple commands that did the following.
 - Installed docker.io which is the software used to house the container
 - Installed python3-pip a package management system written in python used it install and manage software packages.
 - Increase the virtual memory providing a high level of resource to the systemm helping to carry our multiple process simultaneously. 
@@ -118,7 +116,7 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat will collects and monitors all log files or specific locations that are specified.
 - Metricbeats will periodically collect metrics from the operating system and from services running on the server.
 
-##Using the Playbook:
+## Using the Playbook:
 
 In order to use the playbook, you will need to have an Ansible control node already configured, assuming you have such a control node provisioned:
 
