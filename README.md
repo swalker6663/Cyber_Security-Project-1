@@ -98,42 +98,42 @@ In the ELK install i used a playbook or YAML file with multiple commands that di
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-![](Docker20%ps.png)
-
-TODO: Update the path with the name of your screenshot of docker ps output
+![](Docker%20ps.png)
 
 ## Target Machines & Beats
 
 This ELK server is configured to monitor the following machines: 
-
-| Web-1 | Web Server | 10.0.0.9  |Linux 
-| Web-2 | Web Server | 10.0.0.10 |Linux 
-| Web-3 | Web Server | 10.0.0.12 |Linux
+| ----- | :--------: | --------- | ----: |
+| Web-1 | Web Server | 10.0.0.9  | Linux |
+| Web-2 | Web Server | 10.0.0.10 | Linux |
+| Web-3 | Web Server | 10.0.0.12 | Linux |
 
 We have installed the following Beats on these machines:
 
-Specify which Beats you successfully installed:
+-Specify which Beats you successfully installed:
 I have successfully installed and ran both filebeats and metricbeats on all 3 VM's.
 
 These Beats allow us to collect the following information from each machine:
+- Filebeat will collects and monitors all log files or specific locations that are specified.
+- Metricbeats will periodically collect metrics from the operating system and from services running on the server.
 
-In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., Winlogbeat collects Windows logs, which we use to track user logon events, etc.
-Using the Playbook
+##Using the Playbook:
+
 In order to use the playbook, you will need to have an Ansible control node already configured, assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 
-Copy the _____ file to _____.
-Update the _____ file to include...
-Run the playbook, and navigate to ____ to check that the installation worked as expected.
--Answer the following questions to fill in the blanks:_
+-Answer:
 
-Which file is the playbook? Where do you copy it?
-Which file do you update to make Ansible run the playbook on a specific machine? In order to add another machine so Ansible can run the playbook you will need to change the hosts file located in the /etc/ansible/ dir.
+- Copy the elk_install.yml file to /etc/ansible/roles/elk_install.yml
+- Update the hosts file to include (IP ansible_python_interpreter=/usr/bin/python3
+- Run the playbook, and navigate to http://[your_elk_server_ip]:5601/app/kibana to check that the installation worked as expected.
+
+
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? The ELK server would be installed on the VM and filebeat would be the added software within the ELK Stack.
 
-To access the ELK server goto  http://[your.ELK-VM.External.IP]:5601/app/kibana
+To access the ELK server goto  http://[yourip.ELK-VM.External.IP]:5601/app/kibana
 
 As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 Once inside the Ansible container you will navigatew to the directory that contains the playbook once there use the command.
