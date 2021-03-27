@@ -33,12 +33,12 @@ Load balancing ensures that the application will be highly available, in additio
 Load balancers protect the Availability leg of the triad ensuring that the weight of the traffic is not overloaded causing servers to be overwhelmed all at once.
 
 -What is the advantage of a jump box?
-A jump server or Jump box is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
+- A jump server or Jump box is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Jumpbox and system network.
 
 -What does Filebeat watch for? 
-Forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- Forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
 
 -What does Metricbeat record? periodically collect metrics from the operating system and from services running on the server
 The configuration details of each machine may be found below.
@@ -61,7 +61,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 Machines within the network can only be accessed by the Jump Box.
 
 -Which machine did you allow to access your ELK VM? 
-Jump Box/Ansible Container
+- Jump Box/Ansible Container
 - PrivateIP: 10.0.0.8
 - PublicIP: 40.71.27.37
 
@@ -82,7 +82,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 
 -What is the main advantage of automating configuration with Ansible? 
-This allows multiple changes to multiple machines at once making
+- This allows multiple changes to multiple machines at once making
 
 The playbook implements the following tasks:
 
@@ -110,7 +110,7 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 
 -Specify which Beats you successfully installed:
-I have successfully installed and ran both filebeats and metricbeats on all 3 VM's.
+- I have successfully installed and ran both filebeats and metricbeats on all 3 VM's.
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat will collects and monitors all log files or specific locations that are specified.
@@ -133,7 +133,7 @@ SSH into the control node and follow the steps below:
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? The ELK server would be installed on the VM and filebeat would be the added software within the ELK Stack.
 
 To access the ELK server goto  http://[yourip.ELK-VM.External.IP]:5601/app/kibana
-If you are successful with all the tasks above and got your browser you should see the following:
+- If you are successful with all the tasks above and got your browser you should see the following:
 
 ![](Kibana.png)
 
