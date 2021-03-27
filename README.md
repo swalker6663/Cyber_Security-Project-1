@@ -103,10 +103,10 @@ The following screenshot displays the result of running docker ps after successf
 ## Target Machines & Beats
 
 This ELK server is configured to monitor the following machines: 
-| ----- | :--------: | --------- | ----: |
-| Web-1 | Web Server | 10.0.0.9  | Linux |
-| Web-2 | Web Server | 10.0.0.10 | Linux |
-| Web-3 | Web Server | 10.0.0.12 | Linux |
+| ----- | ---------- | :-------: | -----: |
+| Web-1 | Web Server | 10.0.0.9  | Linux  |
+| Web-2 | Web Server | 10.0.0.10 | Linux  |
+| Web-3 | Web Server | 10.0.0.12 | Linux  |
 
 We have installed the following Beats on these machines:
 
