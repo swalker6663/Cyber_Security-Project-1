@@ -98,6 +98,8 @@ In the ELK install i used a playbook or YAML file with multiple commands that di
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
+![](Docker20%ps.png)
+
 TODO: Update the path with the name of your screenshot of docker ps output
 
 ## Target Machines & Beats
