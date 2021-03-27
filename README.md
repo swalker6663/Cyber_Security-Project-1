@@ -12,7 +12,7 @@ As the above YAML file show the details require more than just the aid of a play
 
 -This document contains the following details: Description of the Topology
 
--Access Policies
+#Access Policies
 -ELK Configuration
 -Beats in Use
 -Machines Being Monitored
