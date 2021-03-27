@@ -30,7 +30,7 @@ As the above YAML file show the details require more than just the aid of a play
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
 
 -What aspect of security do load balancers protect?
-Load balancers protect the Availability leg of the triad ensuring that the weight of the traffic is not overloaded causing servers to be overwhelmed all at once.
+- Load balancers protect the Availability leg of the triad ensuring that the weight of the traffic is not overloaded causing servers to be overwhelmed all at once.
 
 -What is the advantage of a jump box?
 - A jump server or Jump box is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
