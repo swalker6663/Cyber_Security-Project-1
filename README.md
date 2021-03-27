@@ -133,7 +133,7 @@ SSH into the control node and follow the steps below:
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? The ELK server would be installed on the VM and filebeat would be the added software within the ELK Stack.
 
 To access the ELK server goto  http://[yourip.ELK-VM.External.IP]:5601/app/kibana
-- If you are successful with all the tasks above and got your browser you should see the following:
+- If you are successful with all the tasks above and goto your browser you should see the following:
 
 ![](Kibana.png)
 
