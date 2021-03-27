@@ -134,7 +134,9 @@ SSH into the control node and follow the steps below:
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? The ELK server would be installed on the VM and filebeat would be the added software within the ELK Stack.
 
 To access the ELK server goto  http://[yourip.ELK-VM.External.IP]:5601/app/kibana
+If you are successful with all the tasks above and got your browser you should see the following:
 
-As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
-Once inside the Ansible container you will navigatew to the directory that contains the playbook once there use the command.
-ansible-playbook (the .yml file to be used) and hit enter this command will run and could take some time so be patient.
+![](Kibana.png)
+
+
+ 
