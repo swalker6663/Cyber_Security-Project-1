@@ -124,7 +124,7 @@ SSH into the control node and follow the steps below:
 
 -Answer:
 
-- Copy the elk_install.yml file to /etc/ansible/roles/elk_install.yml
+- Copy the elk_install.yml file to /etc/ansible/roles/install-elk.yml
 - Update the hosts file to include (IP ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to http://[your_elk_server_ip]:5601/app/kibana to check that the installation worked as expected.
 
